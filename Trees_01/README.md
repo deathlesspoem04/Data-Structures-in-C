@@ -30,13 +30,10 @@ We use a Boolean Variable to check if we have visited a node or not.
 2. Visited right subtree 
     ```else if (temp->right && temp->right->visited == false)``` 
         ```temp = temp->right;```
-3. ```
-else { 
-            printf("%d %d %s-> ", temp->rollNo,temp->marks,temp->name);
-            temp->visited = true; 
-            temp = head; 
-        }
-```
+3. ```else {``` 
+        ```printf("%d %d %s-> ", temp->rollNo,temp->marks,temp->name);```
+        ```temp->visited = true;``` 
+        ```temp = head; }```
 
 #### Algorithm – Mirror(tree):
 
