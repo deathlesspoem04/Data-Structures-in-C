@@ -33,6 +33,8 @@ init() {
 }
 ```
 
+Keeping the Algorithm same we implement it with and without traversal
+
 #### Algorithm - BFS (Breadth First Traversal)
 
 The purpose of the algorithm is to mark each vertex as visited while avoiding cycles.
@@ -52,3 +54,23 @@ while Q is non-empty
     remove the head u of Q 
     mark and enqueue all (unvisited) neighbours of u
 ```
+
+Keeping the Algorithm same we implement it with and without traversal
+
+#### Algorithm - Time of Arrival and Departure in Vertices using DFS
+
+Pre-visit and Post-visit numbers can be found out by simple DFS. We will take two arrays one for storing pre numbers and one for post numbers and by taking a variable which will keep track of the time.
+```
+while(temp!=NULL) 
+{
+int connectedVertex = temp->vertex;
+if(graph->visited[connectedVertex] == 0) {
+dfsTime(graph, connectedVertex);
+}
+temp = temp->next;
+post[vertex] = time;
+time++;
+}
+```
+
+And we had many helper functions such as printgraph , create graph , adding direcyted edge and many more.
